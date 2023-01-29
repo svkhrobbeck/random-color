@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Gradient Color</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="images/"> -->
 
-  <!-- Favicon -->
-  <!-- <link rel="shortcut icon" href="images/"> -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <button class="toggler button" data-toggler-button>
+        <span class="toggler__inner">
+          <span class="toggler__heading">Random Gradient Color</span>
+        </span>
+      </button>
+      <button class="copy-code button" data-copy-button>
+        <span class="copy-code__inner">
+          <span class="copy-code__heading">Copy Code</span>
+        </span>
+      </button>
 
-  <!-- HEADER -->
-  <!-- /HEADER -->
+      <!-- MODAL -->
+      <div class="modal" data-modal>
+        <h2 class="modal__text">
+          Color code copied!
+        </h2>
+      </div>
+      <!-- /MODAL -->
+    </main>
+    <!-- /MAIN CONTENT -->
 
-  <!-- MAIN CONTENT -->
-  <main class="main-content">
-  </main>
-  <!-- /MAIN CONTENT -->
-
-  <!-- FOOTER -->
-  <!-- /FOOTER -->
 
 
-  <!-- SCRIPTS -->
-  <!-- <script src="js/main.js"></script> -->
-
-</body>
-
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

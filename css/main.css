@@ -29,29 +29,16 @@ html {
   outline-offset: 3px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
-  background-color: var(--primary-bg-color);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
   display: flex;
   flex-direction: column;
-}
-
-/* CONTAINER */
-.container {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 /* SCROLL BAR */
@@ -78,24 +65,14 @@ body {
   }
 }
 
-/* VISUALLY HIDDEN */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* BUTTON */
@@ -105,6 +82,45 @@ body {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+.button:hover {
+  transform: scale(1.03);
 }
 
-/* RETINA BGS *//*# sourceMappingURL=main.css.map */
+/* COPY CODE */
+.copy-code {
+  margin-bottom: 40px;
+}
+
+/* MODAL */
+.modal {
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 5px 7px;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.modal.show {
+  transform: scale(1);
+  opacity: 1;
+}
+.modal .modal__text {
+  font-weight: 500;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}/*# sourceMappingURL=main.css.map */
